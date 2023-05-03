@@ -183,23 +183,6 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5A4A3CF503C8"
-			compartment 	(object Compartment
-			    Parent_View 	@1
-			    location   	(2952, 1238)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    anchor     	2
-			    nlines     	5
-			    max_width  	510
-			    justify    	0)
 			annotation 	8
 			autoResize 	TRUE)
 		    (object UseCaseView "Use Case View::TransformImage" @2
@@ -577,6 +560,11 @@
 			uid        	0)
 		    (object Operation "kich nut \"Save\""
 			quid       	"5A21407D00FA"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "chon video , thoi gian can bien doi"
+			quid       	"5A21C0D002B0"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)))
@@ -978,19 +966,19 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@17
-				    location   	(711, 706)
+				    location   	(710, 706)
 				    fill_color 	13434879
 				    nlines     	1
-				    max_width  	770
+				    max_width  	772
 				    justify    	0
 				    label      	"TransformImageUI")
 				stereotype 	(object ItemLabel
 				    Parent_View 	@17
-				    location   	(711, 656)
+				    location   	(710, 656)
 				    fill_color 	13434879
 				    anchor     	10
 				    nlines     	1
-				    max_width  	770
+				    max_width  	772
 				    justify    	0
 				    label      	"<<boundary>>")
 				icon       	"boundary"
@@ -1000,7 +988,7 @@
 				quidu      	"5A203A5602BF"
 				compartment 	(object Compartment
 				    Parent_View 	@17
-				    location   	(711, 767)
+				    location   	(710, 767)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -1014,9 +1002,9 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	4
-				    max_width  	768
+				    max_width  	769
 				    justify    	1)
-				width      	788
+				width      	790
 				height     	342
 				annotation 	8
 				autoResize 	TRUE)
@@ -1164,7 +1152,7 @@
 				quidu      	"5A4A3CF503C8"
 				compartment 	(object Compartment
 				    Parent_View 	@20
-				    location   	(3282, 688)
+				    location   	(3273, 688)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -1177,7 +1165,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	5
-				    max_width  	509
+				    max_width  	510
 				    justify    	0)
 				annotation 	8
 				autoResize 	TRUE)
@@ -3149,14 +3137,14 @@
 						ordinal    	0
 						quidu      	"5A2049D802A0"
 						creation   	FALSE)
-					    (object Message "chon video can bien doi"
+					    (object Message "chon video , thoi gian can bien doi( )"
 						quid       	"5A204FC901B6"
 						frequency  	"Aperiodic"
 						synchronization 	"Simple"
 						dir        	"FromClientToSupplier"
 						sequence   	"7"
 						ordinal    	6
-						quidu      	"000000000000"
+						quidu      	"5A21C0D002B0"
 						creation   	FALSE)
 					    (object Message "kich nut \"Save\"( )"
 						quid       	"5A21407A0242"
@@ -3499,7 +3487,7 @@
 				quidu      	"5A2043CC02DF"
 				compartment 	(object Compartment
 				    Parent_View 	@146
-				    location   	(723, 1209)
+				    location   	(705, 1209)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -3511,7 +3499,7 @@
 					default_color 	TRUE)
 				    icon_style 	"Icon"
 				    anchor     	2
-				    nlines     	5
+				    nlines     	6
 				    max_width  	731
 				    justify    	0)
 				width      	230
@@ -3577,7 +3565,7 @@
 				quidu      	"5A203AD4030D"
 				compartment 	(object Compartment
 				    Parent_View 	@150
-				    location   	(2411, 1253)
+				    location   	(2394, 1253)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -3624,7 +3612,7 @@
 				quidu      	"5A4A3CF503C8"
 				compartment 	(object Compartment
 				    Parent_View 	@151
-				    location   	(3221, 732)
+				    location   	(3212, 732)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -4064,7 +4052,7 @@
 				quidu      	"5A203C270271"
 				compartment 	(object Compartment
 				    Parent_View 	@172
-				    location   	(2104, 2172)
+				    location   	(2093, 2172)
 				    font       	(object Font
 					size       	10
 					face       	"Arial"
@@ -4954,7 +4942,7 @@
 				origin     	(1247, 1497)
 				terminus   	(704, 1497)
 				ordinal    	5)
-			    (object InterMessView "chon video can bien doi" @243
+			    (object InterMessView "chon video , thoi gian can bien doi( )" @243
 				location   	(0, 1723)
 				font       	(object Font
 				    size       	10
@@ -4980,9 +4968,9 @@
 				    quidu      	"5A204FC901B6"
 				    anchor_loc 	1
 				    nlines     	1
-				    max_width  	462
+				    max_width  	679
 				    justify    	0
-				    label      	"chon video can bien doi"
+				    label      	"chon video , thoi gian can bien doi( )"
 				    pctDist    	0.500000
 				    height     	45
 				    orientation 	0)
